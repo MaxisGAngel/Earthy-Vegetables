@@ -74,6 +74,11 @@ const Home = () => {
             View Our Guides
           </Link>
 
+          <div> 
+          <h2 className="heading-3">Start your Gardening Journey</h2>
+          <p>Our easy-to-follow guides are here to help you every step of the way. From beginner tips to expert advice, we cover everything you need to know to grow vegetables indoors or outdoors. Explore our detailed guides on how to grow some of the most essential plants, and start your own garden today!</p>
+          </div>
+
           <div className="carousel-wrapper mb-12">
             <Swiper
               modules={[Autoplay, Pagination]}
