@@ -92,6 +92,7 @@ const VegetableGuide = () => {
           </div>
         </div>
       </div>
+    </div>
   );
 };
 
