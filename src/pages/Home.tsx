@@ -14,11 +14,11 @@ const Home = () => {
 
   return (
     <div className="hero-section">
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
+      { <div className="absolute top-0 left-0 w-full h-full -z-10">
         <svg className="absolute top-0 left-0 w-full" viewBox="0 0 1440 600" fill="none">
           <path d="M0 0H1440V400C1440 400 1200 600 720 600C240 600 0 400 0 400V0Z" fill="#DCFCE7"/>
         </svg>
-      </div>
+      </div> }
 
       <div className="container mx-auto px-4 py-8">
         <div className="relative">
@@ -33,33 +33,36 @@ const Home = () => {
         <div className="content-wrapper">
           <h1 className="heading-1 text-center">Welcome</h1>
           <h1 className="heading-2">
-            Welcome to<br />Grow Your Own
+            Welcome to Earthy Vegetables<br />your Guide to Growing your own Fresh Vegetables at Home!
           </h1>
 
           <div className="mb-12">
             <h2 className="heading-2">About</h2>
             <p className="mb-8">
-              Our mission is to help everyone grow their own food sustainably. We provide comprehensive guides
-              and resources to make gardening accessible and enjoyable for all.
+            At Earthy Vegetables, we believe everyone should have access to the learning and benefits of growing their own food. Whether you're an advanced gardener or just starting out, we’re here to help you grow a delicious garden!
             </p>
 
-            <h2 className="heading-3">Reasons Why</h2>
+            <h2 className="heading-3">Why Grow Your Own Vegetables?</h2>
             <div className="space-y-6">
               <div className="feature-item">
                 <h3 className="feature-title">Healthy and Delicious</h3>
-                <p>Grow fresh, nutritious vegetables right in your backyard.</p>
+                <p> Enjoy nutrient-packed produce right from your own garden.</p>
               </div>
               <div className="feature-item">
                 <h3 className="feature-title">Save Money</h3>
-                <p>Reduce your grocery bills by growing your own produce.</p>
+                <p>Reduce grocery bills by growing your own food.</p>
               </div>
               <div className="feature-item">
                 <h3 className="feature-title">Sustainable Living</h3>
-                <p>Contribute to environmental sustainability through home gardening.</p>
+                <p>Cut down on food waste and reduce your carbon footprint.</p>
               </div>
               <div className="feature-item">
                 <h3 className="feature-title">Clean and Fresh</h3>
-                <p>Know exactly where your food comes from and how it's grown.</p>
+                <p>Know exactly what goes into your food – no chemicals or pesticides.</p>
+              </div>
+              <div className="feature-item">
+                <h3 className="feature-title">A new Hobby</h3>
+                <p>Experience the joy of growing and harvesting your own plants!</p>
               </div>
             </div>
           </div>
