@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Supplies = [
+const Supplylist = [
   { 
     name: 'Broccoli',
     image: 'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc'
