@@ -117,8 +117,20 @@ const Home = () => {
           <div className="highlight-box mb-12">
             <h2 className="heading-3">Supporting the Environment with Kaitiakitaka</h2>
             <p>
-              We're committed to environmental stewardship through sustainable gardening practices.
-              Learn how you can make a positive impact on our ecosystem.
+            Our commitment to the environment is strong. We are inspired by the Maori concept of Kaitiakitaka, which means "care and guardianship of the environment." We believe in nurturing the earth, protecting our natural resources, and fostering a sustainable way of living. Through gardening, we can contribute to the health of our planet, support local ecosystems and live more sustainably. Let’s care for the environment together, one plant at a time.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="heading-3">Why We created This Website</h2>
+            <p>
+            We started Grow Your Own with one mission in mind: to inspire and help people to grow their own food. By growing your own vegetables, we can reconnect with the earth and create a healthier, more sustainable lifestyle. We are here to guide you.
+            </p>
+          </div>
+
+          <div> 
+            <p>
+          Join us in our mission to grow fresh food, support the environment, and lead healthier, more sustainable lives. Let’s grow together!
             </p>
           </div>
 
