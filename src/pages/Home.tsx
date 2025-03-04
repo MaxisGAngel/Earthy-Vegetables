@@ -33,7 +33,7 @@ const Home = () => {
         <div className="content-wrapper">
           <h1 className="heading-1 text-center">Welcome</h1>
           <h1 className="heading-2">
-            Welcome to Earthy Vegetables<br />your Guide to Growing your own Fresh Vegetables at Home!
+            Welcome to Earthy Vegetables<br />Your Guide to Growing your own Fresh Vegetables at Home!
           </h1>
 
           <div className="mb-12">
@@ -91,6 +91,10 @@ const Home = () => {
             </Swiper>
           </div>
 
+          <div className="info-section mb-12">
+            <h2 className="heading-3 text-center">Donate or Receive Gardening Supplies</h2>
+          </div>
+
           <div className="process-flow mb-12">
             <div className="process-circle process-circle-blue">Tools</div>
             <ArrowRight className="process-arrow" />
@@ -99,11 +103,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="info-section mb-12">
-            <h2 className="heading-3 text-center">Donate or Receive Gardening Tools and Seeds</h2>
+          <div>
             <p>
-              Join our community initiative to share gardening resources. Whether you have extra tools to donate
-              or need supplies to start your garden, we're here to help.
+            At Earthy Vegetables, we believe gardening should be accessible to everyone. That’s why we’ve created a space where you can donate old gardening tools and seeds, or receive free gardening supplies to get started. If you have spare tools or seeds lying around, consider donating them so someone else can begin their gardening adventure.
             </p>
           </div>
 
