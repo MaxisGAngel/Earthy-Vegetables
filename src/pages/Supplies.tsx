@@ -39,7 +39,7 @@ const Supplies = [
   }
 ];
 
-const Guides = () => {
+const Supplies = () => {
   return (
     <div className="min-h-screen">
       <div className="container">
