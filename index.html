@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Earthy Vegetables</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="vegetables.html" class="dropbtn">Guides</a>
+            <div class="dropdown-content">
+                <a href="spring.html">Spring</a>
+                <a href="summer/html">Summer</a>
+                <a href="autumn.html">Autumn</a>
+                <a href="winter.html">Winter</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="supplies.html" class="dropbtn">Supplies</a>
+            <div class="dropdown-content">
+                <a href="seeds.html">Seeds</a>
+                <a href="pots.html">Pots</a>
+                <a href="tools.html">Tools</a>
+                <a href="soils.html">Soils</a>
+                <a href="free.html">Free</a>
+            </div>
+        </div>
+        <a href="ourmission.html">Our Mission</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+    <section class="home-container">
+        <section class="hero">
+            <h1>Welcome to Earthy Vegetables</h1>
+            <h5>Your Guide to Growing your own Fresh Vegetables at Home!</h5>
+            <a href="vegetables.html" class="cta-button">Guides</a>
+        </section>
+    </section>
+
+        <section class="about">
+            <h2>About</h2>
+            <p>At Earthy Vegetables, we believe everyone should have access to the learning and benefits of growing their own food. Whether you're an advanced gardener or just starting out, we’re here to help you grow a delicious garden!</p>
+            <div class="main-carousel">
+                <div class="carousel-cell">
+                    <a href="guides.html?season=autumn">
+                        <img src="images/bean.png" alt="Beans">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="guides.html?season=spring">
+                        <img src="images/br onio.png" alt="Brown Onion">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="guides.html?season=summer">
+                        <img src="images/carr.png" alt="Carrots">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="guides.html?season=autumn">
+                        <img src="images/lett.png" alt="Lettuce">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="guides.html?season=winter">
+                        <img src="images/mush.png" alt="Mushroom">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="guides.html?season=autumn">
+                        <img src="images/peas.png" alt="Peas">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="guides.html?season=autumn">
+                        <img src="images/pota.png" alt="Potato">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>Why Grow Your Own Vegetables?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h4>Healthy and Delicious</h4>
+                    <p>Enjoy nutrient-packed produce right from your own garden</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Save Money</h4>
+                    <p>Reduce grocery bills by growing your own food.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Sustainable Living</h4>
+                    <p>Cut down on food waste and reduce your carbon footprint.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Clean and Fresh</h4>
+                    <p>Know exactly what goes into your food – no chemicals or pesticides.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>New Hobby</h4>
+                    <p>Experience the joy of growing and harvesting your own plants!</p>
+                </div>
+            </div>
+        </section>
+
+        <section> 
+            <h2>Start Your Gardening Journey</h2>
+            <p>Our easy-to-follow guides are here to help you every step of the way. From beginner tips to expert advice, we cover everything you need to know to grow vegetables indoors or outdoors. Explore our detailed guides on how to grow some of the most essential plants, and start your own garden today!</p>
+            <a href="vegetables.html" class="cta-button">Guides</a>
+        </section>
+
+        <section class="donation">
+            <h2>Donate or Receive Gardening Supplies</h2>
+            <img class='donation-image' src="images/donatereceivetra.png", alt="People can donate to help others with their gardens.">
+            <p>At Earthy Vegetables, we believe gardening should be accessible to everyone. That’s why we’ve created a space where you can donate old gardening tools and seeds, or receive free gardening supplies to get started. If you have spare tools or seeds lying around, consider donating them so someone else can begin their gardening adventure.</p>
+        </section>
+
+        <section class="home-container">
+            <section class="hero">
+                <h2>Why We Do This</h2>
+                <p>Learn more about our purpose by clicking the button below!</p>
+                <a href="ourmission.html" class="cta-button">Our Mission</a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Footer info goes here</p>
+    </footer>
+
+    <script>
+        var flkty = new Flickity('.main-carousel', {
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            prevNextButtons: true,
+            pageDots: true,
+            groupCells: 3
+        });
+    </script>
+</body>
+</html>

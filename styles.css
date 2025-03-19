@@ -1,0 +1,623 @@
+/*
+    ****************************
+    Author: Maxis Angel
+    Creation Date: TBC 2025
+    ****************************
+*/
+
+@import url("typography.css");
+@import url("color.css");
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    GENERAL COLOR SETTINGS
+
+    dark green: #3d7130
+    med green:: #749b5a
+    light green: #c7d7ac
+    orange: #e05519
+    yellow: #f8bd1c
+    beige: #fdf6ef
+    purple: #b60196
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+body {
+    background-color: #fdf6ef;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #3d7130;
+}
+
+.navbar a {
+    color: #fdf6ef;
+}
+
+.navbar {
+    background-color: #3d7130;
+}
+
+.dropbtn {
+    color: #fdf6ef;
+}
+
+.dropdown-content {
+    background-color: #3d7130;
+}
+
+.dropdown-content a {
+    color: #fdf6ef;
+}
+
+.dropdown-content a:hover {
+    background-color: #749b5a;
+}
+
+.hero {
+    background-color: #c7d7ac;
+}
+
+.cta-button {
+    background-color: #e05519;
+    color: #fdf6ef;
+}
+
+.benefit-card {
+    background-color: #c7d7ac;
+}
+
+.progress-dot {
+    background-color: #3d7130;
+}
+
+.care-h3 {
+    color: var(--dark-text);
+}
+
+.season-btn {
+    background-color: #c7d7ac;
+}
+
+.vegetable-card {
+    background-color: white;
+}
+
+.supply-item {
+    background-color: #c7d7ac;
+}
+
+.submit-btn {
+    background-color: #3d7130;
+    color: #fdf6ef;
+}
+
+footer {
+    background-color: #3d7130;
+    color: #fdf6ef;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    GENERAL TYPE SETTINGS
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+h1 {
+    font-family: var(--typeface-oswald);
+    font-size: 4rem;
+    font-weight:800;
+    text-align:center;
+}
+
+h2 {
+    Font-family: var(--typeface-oswald);
+    font-size: 2.5rem;
+    font-weight:600
+}
+
+h3 {
+    font-family: var(--typeface-poppins);
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: var(--typeface-poppins);
+    font-size: 1.5rem;
+    font-weight:600
+}
+
+h5 {
+    font-family: var(--typeface-poppins);
+    font-size: 1.5rem;
+    font-weight:400
+}
+
+h6 {
+    font-family: var(--typeface-poppins);
+    font-size: 1.25rem;
+    font-weight:600;
+}
+
+p {
+    font-family: var(--typeface-poppins);
+    font-size: 1rem;
+    font-weight:400;
+}
+
+.cta-button {
+    font-family: var(--typeface-poppins);
+    font-size: 1rem;
+    font-weight:500
+}
+
+.navbar {
+    font-family: var(--typeface-poppins);
+    font-size: 1.25rem;
+    font-weight:500;
+}
+
+form {
+    font-family: var(--typeface-poppins);
+    font-size: 1.25rem;
+    font-weight:500;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    SPACING SETTINGS
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+/* section {
+    padding: top and bottom
+} 
+    
+main {
+padding: left and right (bring it in from the edge of the website? 
+}
+*/
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    NAVIGATION + DROPDOWNS
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    padding-top: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0 20px 20px 20px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Common styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+   HOME PAGE 
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.home-container {
+    display: grid;
+    gap: 3rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 1rem;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+   FLICKITY CAROUSEL 
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.main-carousel {
+    margin: 2rem 0;
+}
+
+.carousel-cell {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.carousel-cell img {
+    width: 300px;
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Override Flickity default styles */
+.flickity-button {
+    background: #4a7c59;
+}
+
+.flickity-button:hover {
+    background: #3d6548;
+}
+
+.flickity-button-icon {
+    fill: white;
+}
+
+.flickity-page-dots .dot {
+    background: #4a7c59;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    HOMEPAGE BENEFITS GRID
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    DONATION IMAGE
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.donation-image {
+    max-width: 1150px;
+    position: center;
+}
+
+.ourmission-image {
+    max-width: 1150px;
+}
+
+
+/* Guides page styles */
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.progress-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    GUIDES GRID - CARE ITEM LAYOUT
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+      @supports (display: grid) {
+        .care-item {
+            display: grid;
+            gap: 1rem;
+            grid-auto-columns: 1fr;
+            grid-template-areas:
+                'care-image care-h3 care-h3'
+                'image care-list care-list';
+            padding-block: 2rem;
+            margin-inline: auto;
+            margin: 1em 0;
+            padding-bottom: 2rem;
+            grid-template-rows: 40px 30px 220px;
+        }
+    }
+    
+    /* @media screen and (max-width: 1000px) {
+        .single-item__image {
+            max-width: 400px;
+        }
+    } */
+    
+    /* For mobile device widths, containers below are stacked in a single column - max width 875px or 54.688rem */
+    @media screen and (max-width: 844px) {
+        .care-item {
+            grid-auto-columns: 1fr;
+            grid-template-areas: 
+            'care-image'
+            'care-h3'
+            'care-list';
+            padding-block: 2rem;
+            margin-inline: auto;
+            margin: 1em 0;
+            padding-bottom: 2rem;
+            grid-template-rows: initial;
+        }
+    }
+    
+    .care-image {
+        grid-area: care-image;
+        width: 100%;
+        max-width: 250px
+        
+    }
+    
+    .care-h3 {
+        grid-area: care-h3;
+    }
+    
+    .care-list {
+        grid-area: care-list;
+        margin-bottom: 0;
+        
+        /* line-height: 2.8rem; */
+    }
+    
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    GUIDES GRID - DESCRIPTION GRID
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+        @supports (display: grid) {
+            .introduction-guide {
+                display: grid;
+                gap: 1rem;
+                grid-auto-columns: 1fr;
+                grid-template-areas:
+                    'guide-title guide-image'
+                    'guide-subtitle guide-image'
+                    'guide-stat-1 guide-image'
+                    'guide-stat-2 guide-image'
+                    'guide-stat-3 guide-image'
+                    'guide-description guide-description';
+                padding-block: 2rem;
+                margin-inline: auto;
+                margin: 1em 0;
+                padding-bottom: 2rem;
+                grid-template-rows: 40px 30px 220px;
+            }
+        }
+        
+        /* @media screen and (max-width: 1000px) {
+            .single-item__image {
+                max-width: 400px;
+            }
+        } */
+        
+        /* For mobile device widths, containers below are stacked in a single column - max width 875px or 54.688rem */
+        @media screen and (max-width: 844px) {
+            .introduction-guide {
+                grid-auto-columns: 1fr;
+                grid-template-areas: 
+                'guide-title'
+                'guide-subtitle'
+                'guide-image'
+                'guide-stat-1'
+                'guide-stat-2'
+                'guide-stat-3'
+                'guide-description';
+                padding-block: 2rem;
+                margin-inline: auto;
+                margin: 1em 0;
+                padding-bottom: 2rem;
+                grid-template-rows: initial;
+            }
+        }
+        
+        .guide-image {
+            grid-area: guide-image;
+            width: 100%;
+            max-width: 250px
+            
+        }
+        
+        .guide-title {
+            grid-area: guide-title;
+        }
+
+        .guide-subtitle {
+            grid-area: guide-subtitle;
+        }
+
+        .guide-description {
+            grid-area: guide-description;
+        }
+        
+        .guide-stat-1 {
+            grid-area: guide-stats;
+            margin-bottom: 0;
+            
+            /* line-height: 2.8rem; */
+        }
+
+        .guide-stat-2 {
+            grid-area: guide-stats;
+            margin-bottom: 0;
+        }
+
+        .guide-stat-3 {
+            grid-area: guide-stats;
+            margin-bottom: 0;
+        }
+
+    /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    0.  CARE ITEM LAYOUT
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+
+/* GENERAL GRID LAYOUT FOR ALL PAGES */
+.grid-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Vegetables page styles */
+.seasons-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.season-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.vegetables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.vegetable-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.veg-image {
+    width: 100%;
+    height: 150px;
+    object-fit: scale-down;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+    
+
+/* Supplies page styles */
+.supplies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.supply-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+
+/* Contact page styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}

@@ -1,0 +1,27 @@
+/*
+    Author: Maxis Angel
+    Creation Date:: September 2024
+*/
+
+/* Assigning colours to variables */
+html {
+    --dark-text: #1A1919;
+    --light-text: #ffffff;
+    --cream-text: #ffffff;
+    --light-background: #1B992B;
+    --dark-background: #002F15;
+    --card-background: #26531c;
+    --page-background: #0b4d45;
+    --medium-dark-text: #055723;
+    --dark-border-colour: #134810;
+    --slide-out-menu-background: #135821;
+    --footer-background: #e77e15cf;
+    --description-text-colour: #ffffff;
+    --light-silver: #fcfcfa;
+    --nav-background: #e38c08;
+    --nav-text: #ffffff;
+    --nav-highlight: #be660e;
+    --nav-hovertext: #be660e;
+    --nav-hoverhighlight: #ffffff89;
+    --nav-title: #3e1700;
+}
