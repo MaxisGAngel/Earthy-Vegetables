@@ -1,2 +1,1 @@
 # Earthy-Vegetables
-# Earthy-Vegetables
