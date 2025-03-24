@@ -74,6 +74,16 @@ a:hover {
     color: #fdf6ef;
 }
 
+.journey-button {
+    background-color: #e05519;
+    color: #fdf6ef;
+}
+
+.cta-button-contact {
+    background-color: #e05519;
+    color: #fdf6ef;
+}
+
 .benefit-card {
     background-color: #c7d7ac;
 }
@@ -114,6 +124,14 @@ footer {
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+h1.special {
+    font-family: var(--typeface-oswald);
+    font-size: 4rem;
+    font-weight:800;
+    text-align: left;
+    line-height: 75px;
+}
+
 h1 {
     font-family: var(--typeface-oswald);
     font-size: 4rem;
@@ -147,7 +165,7 @@ h5 {
 h6 {
     font-family: var(--typeface-poppins);
     font-size: 1.25rem;
-    font-weight:600;
+    font-weight:400;
 }
 
 p {
@@ -157,6 +175,18 @@ p {
 }
 
 .cta-button {
+    font-family: var(--typeface-poppins);
+    font-size: 1rem;
+    font-weight:500
+}
+
+.journey-button {
+    font-family: var(--typeface-poppins);
+    font-size: 1rem;
+    font-weight:500
+}
+
+.cta-button-contact {
     font-family: var(--typeface-poppins);
     font-size: 1rem;
     font-weight:500
@@ -184,6 +214,18 @@ body {
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+.list {
+    margin-left: 3rem;
+}
+
+.care-list {
+    margin-left: 3rem;
+}
+
+section {
+    padding: 40px;
+}
+
 /* section {
     padding: top and bottom
 } 
@@ -206,6 +248,7 @@ padding: left and right (bring it in from the edge of the website?
     gap: 2rem;
     position: relative;
     padding-top: 40px;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -230,7 +273,7 @@ padding: left and right (bring it in from the edge of the website?
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-top: 0.5rem;
 }
 
@@ -269,14 +312,27 @@ h1, h2, h3 {
 .hero {
     text-align: center;
     padding: 3rem 0;
+    border-radius: 10px;
 }
 
 .cta-button {
     display: inline-block;
     padding: 0.8rem 2rem;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 10px;
     margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.journey-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -300,7 +356,7 @@ h1, h2, h3 {
     width: 300px;
     height: 100%;
     /* object-fit: cover; */
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -329,13 +385,13 @@ h1, h2, h3 {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2rem;
 }
 
 .benefit-card {
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -345,12 +401,13 @@ h1, h2, h3 {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 .donation-image {
-    max-width: 1150px;
-    position: center;
+    max-width: 100%;
+    height: auto;
 }
 
 .ourmission-image {
-    max-width: 1150px;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -379,13 +436,14 @@ h1, h2, h3 {
             gap: 1rem;
             grid-auto-columns: 1fr;
             grid-template-areas:
+                'care-image . .'
                 'care-image care-h3 care-h3'
-                'image care-list care-list';
+                'care-image care-list care-list';
             padding-block: 2rem;
             margin-inline: auto;
             margin: 1em 0;
             padding-bottom: 2rem;
-            grid-template-rows: 40px 30px 220px;
+            grid-template-rows: 40px 30px 100px;
         }
     }
     
@@ -405,7 +463,6 @@ h1, h2, h3 {
             'care-list';
             padding-block: 2rem;
             margin-inline: auto;
-            margin: 1em 0;
             padding-bottom: 2rem;
             grid-template-rows: initial;
         }
@@ -414,8 +471,8 @@ h1, h2, h3 {
     .care-image {
         grid-area: care-image;
         width: 100%;
-        max-width: 250px
-        
+        max-width: 250px;
+        max-height: 250px;
     }
     
     .care-h3 {
@@ -443,6 +500,26 @@ h1, h2, h3 {
                 grid-template-areas:
                     'guide-title guide-image'
                     'guide-subtitle guide-image'
+                    'guide-stat guide-image'
+                    'guide-stat .'
+                    'guide-description guide-description';
+                padding-block: 2rem;
+                /* width: min(95%, 70rem); */
+                margin-inline: auto;
+                margin: 1em 0;
+                padding-bottom: 2rem;
+                grid-template-rows: 100px 20px 220px;
+            }
+        }
+        
+        /* @supports (display: grid) {
+            .introduction-guide {
+                display: grid;
+                gap: 1rem;
+                grid-auto-columns: 1fr;
+                grid-template-areas:
+                    'guide-title guide-image'
+                    'guide-subtitle guide-image'
                     'guide-stat-1 guide-image'
                     'guide-stat-2 guide-image'
                     'guide-stat-3 guide-image'
@@ -453,8 +530,8 @@ h1, h2, h3 {
                 padding-bottom: 2rem;
                 grid-template-rows: 40px 30px 220px;
             }
-        }
-        
+        } */
+
         /* @media screen and (max-width: 1000px) {
             .single-item__image {
                 max-width: 400px;
@@ -462,7 +539,7 @@ h1, h2, h3 {
         } */
         
         /* For mobile device widths, containers below are stacked in a single column - max width 875px or 54.688rem */
-        @media screen and (max-width: 844px) {
+        /* @media screen and (max-width: 844px) {
             .introduction-guide {
                 grid-auto-columns: 1fr;
                 grid-template-areas: 
@@ -479,61 +556,67 @@ h1, h2, h3 {
                 padding-bottom: 2rem;
                 grid-template-rows: initial;
             }
-        }
+        } */
+         
         
         .guide-image {
             grid-area: guide-image;
             width: 100%;
-            max-width: 250px
-            
+            max-width: 360px;
         }
         
         .guide-title {
             grid-area: guide-title;
+            height: 400px;
         }
 
         .guide-subtitle {
             grid-area: guide-subtitle;
+            margin-top: 2rem;
+            margin-left: 0.3rem;
         }
 
         .guide-description {
             grid-area: guide-description;
         }
         
-        .guide-stat-1 {
-            grid-area: guide-stats;
+        .guide-stat {
+            grid-area: guide-stat;
             margin-bottom: 0;
-            
+            margin-top: 6rem;
+            margin-left: 0.3rem;
             /* line-height: 2.8rem; */
         }
 
-        .guide-stat-2 {
-            grid-area: guide-stats;
+        /* .guide-stat-2 {
+            grid-area: guide-stat-2;
             margin-bottom: 0;
         }
 
         .guide-stat-3 {
-            grid-area: guide-stats;
+            grid-area: guide-stat-3;
             margin-bottom: 0;
-        }
+        } */
 
-    /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
   
-    0.  CARE ITEM LAYOUT
+    GENERAL GRID LAYOUT
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-
-/* GENERAL GRID LAYOUT FOR ALL PAGES */
 .grid-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
-/* Vegetables page styles */
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    VEGETABLE PAGE
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 .seasons-nav {
     display: flex;
     justify-content: center;
@@ -544,8 +627,13 @@ h1, h2, h3 {
 .season-btn {
     padding: 0.5rem 1.5rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+.vegetable-categories {
+    justify-content: center;
+    display: flex;
 }
 
 .vegetables-grid {
@@ -558,19 +646,29 @@ h1, h2, h3 {
 .vegetable-card {
     text-align: center;
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .veg-image {
     width: 100%;
     height: 150px;
     object-fit: scale-down;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
     
 
-/* Supplies page styles */
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    SUPPLIES PAGE
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.supplies-categories {
+    justify-content: center;
+    display: flex;
+}
+
 .supplies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -579,14 +677,30 @@ h1, h2, h3 {
 
 .supply-item {
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 
-/* Contact page styles */
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    CONTACT PAGE
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.cta-button-contact {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .form-group {
@@ -604,20 +718,125 @@ h1, h2, h3 {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .submit-btn {
     padding: 0.8rem 2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     width: 100%;
 }
 
-/* Footer */
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    CONTACT SUCCESS 
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.success-page {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    FOOTER 
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
 footer {
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+     MOBILE
+  
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.animation-area {
+    width: 320px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.cls-1 {
+fill: none;
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4 {
+    stroke-width: 0px;
+}
+
+.cls-2 {
+    fill: #749b5a;
+}
+
+.cls-3 {
+    fill: #3d7130;
+}
+
+.cls-4 {
+    fill: #c7d7ac;
+}
+
+.leaf {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.leaf-one {
+    transform-origin: bottom center;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.3, 0, 0, 0.4);;
+    animation-name: leaf-one;
+    animation-duration: 5s;
+    width: 300px;
+}
+
+.leaf-two {
+    transform-origin: bottom center;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.3, 0, 0, 0.4);
+    animation-name: leaf-two;
+    animation-duration: 5s;
+}
+
+@keyframes leaf-one {
+    0% {
+        -webkit-transform: rotate(-20deg);
+    }
+
+
+    50% {
+        -webkit-transform: rotate(45deg);
+    }
+
+    54% {
+        -webkit-transform: rotate(45deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-20deg);
+    }
+}
+
+@keyframes leaf-two {
+    0% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    47% {
+        -webkit-transform: rotate(20deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-10deg);
+    }
 }
