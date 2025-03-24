@@ -385,13 +385,25 @@ h1, h2, h3 {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .benefit-card {
     padding: 1.5rem;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 100%;
+    height: auto;
+}
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
